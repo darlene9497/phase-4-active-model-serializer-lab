@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 
   def short_content
     post = Post.find(params[:id])
-    render json: post, serializer: PostSummarySerializer
+    render json: post, serializer: AuthorsPostsSerializer
   end
 
   private
